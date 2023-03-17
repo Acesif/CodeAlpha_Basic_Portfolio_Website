@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
 }
 ::-webkit-scrollbar{
     width: 1rem;
@@ -24,18 +25,20 @@
     background-color: red;    
 }
 .container{
-    .article{
-        font-family: 'Silkscreen', cursive;
+    li{
+        list-style-type: square;
+    }
+    #home{
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url(./images/bg.jpg);
+        background-image: url(/codealpha_basic_portfolio_website/images/bg.jpg);
         background-size: contain;
         #nameplate{
             display: flex;
             align-items: center;
             justify-content: center;
-            background: url(./images/bg.jpg);
+            background: url(/codealpha_basic_portfolio_website/images/bg.jpg);
             width: 25.5rem;
             height: 50px;
             border-top-left-radius: 1.25rem;
@@ -70,6 +73,13 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+            }
+            .left{
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column; 
+                padding-left: 120px;
             }
         }
         .cells{
