@@ -5,6 +5,10 @@
   font-family: "Silkscreen", cursive;
 }
 
+body {
+  cursor: url(/codealpha_basic_portfolio_website/images/cursor.png) 16 16, auto;
+}
+
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -92,9 +96,6 @@
   border: 1px solid white;
   padding-left: 1.875rem;
   padding-right: 1.875rem;
-}
-.container #home .cells:not(.div7) {
-  cursor: pointer;
 }
 .container #home .div1 {
   grid-area: 1/1/2/3;

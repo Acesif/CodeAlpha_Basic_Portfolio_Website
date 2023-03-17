@@ -26,9 +26,9 @@
         }
         .card{  
             text-align: center;
-            cursor: pointer;
             background-color: rgba(160, 55, 20, 0.3);
             .card-cover{
+                z-index: 1;
                 padding-top: 6.25rem;
                 color: white;
                 background-color: black;
@@ -37,12 +37,25 @@
                 height: 50%;
             }
             .card-desc{
+                z-index: 1;
                 padding-top: 6.25rem;
                 color: white;
                 background-color: black;
                 transform: translateY(0px);
                 transition: 0.5s transform ease;
                 height: 50%;
+            }
+            .card-details{
+                margin-top: -100%;
+                z-index: 0;
+                font-size: 10px;
+                color:white;
+                font-size: 0.8rem;
+                padding: 0rem 1rem;
+                text-align: left;
+                li{
+                    margin-bottom: .625rem;
+                }
             }
         }
         .card:hover{  
