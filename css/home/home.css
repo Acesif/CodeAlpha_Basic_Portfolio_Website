@@ -1,8 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Silkscreen", cursive;
+  user-select: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +43,18 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: red;
+}
+
+.return {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  background-color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
 }
 
 .container li {
@@ -94,16 +117,13 @@ body {
 }
 .container #home .cells {
   border: 1px solid white;
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .container #home .div1 {
   grid-area: 1/1/2/3;
   color: white;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
-  border-top: none;
+  border: none;
 }
 .container #home .div4 {
   grid-area: 1/3/2/4;

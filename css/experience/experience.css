@@ -32,7 +32,9 @@
 }
 #experience .card-container .card .card-cover {
   z-index: 1;
-  padding-top: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   background-color: black;
   transform: translateY(0px);
@@ -41,7 +43,9 @@
 }
 #experience .card-container .card .card-desc {
   z-index: 1;
-  padding-top: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   background-color: black;
   transform: translateY(0px);
@@ -49,13 +53,15 @@
   height: 50%;
 }
 #experience .card-container .card .card-details {
-  margin-top: -100%;
-  z-index: 0;
-  font-size: 10px;
+  margin-top: -120%;
+  z-index: -1;
+  font-size: 1rem;
   color: white;
   font-size: 0.8rem;
   padding: 0rem 1rem;
   text-align: left;
+  opacity: 0;
+  transition: 0.5s opacity ease;
 }
 #experience .card-container .card .card-details li {
   margin-bottom: 0.625rem;
@@ -67,6 +73,10 @@
 #experience .card-container .card:hover .card-desc {
   transform: translateY(200px);
   transition: 0.5s transform ease;
+}
+#experience .card-container .card:hover .card-details {
+  opacity: 1;
+  transition: 0.5s opacity ease;
 }
 
 /*# sourceMappingURL=experience.css.map */
