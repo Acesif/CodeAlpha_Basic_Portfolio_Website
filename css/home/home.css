@@ -141,6 +141,14 @@ body {
   border-right: none;
   border-top: none;
 }
+.container #home .div4:hover, .container #home .div5:hover, .container #home .div6:hover {
+  transition: 0.2s all ease;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.container #home .div4, .container #home .div5, .container #home .div6 {
+  transition: 0.2s all ease;
+  background-color: rgba(255, 255, 255, 0);
+}
 .container #home .div5 {
   grid-area: 1/4/2/5;
   color: white;
