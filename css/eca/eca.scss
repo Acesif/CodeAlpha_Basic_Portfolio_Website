@@ -1,0 +1,51 @@
+#eca{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.jpg);
+    background-size: contain;
+    transform: scaleY(-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .eca-container{
+        transform: scaleY(-1);
+        color: white;
+        .image-container{
+            .images{
+                display: flex;
+                gap: .625rem;
+                div[class^="img-"]{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1.25rem;
+                    height: 20rem;
+                    width: 20rem;
+                    background-size: contain;
+                    transform: scale(1);
+                    border-radius: 1.25rem;
+                    transition: 0.3s all ease;
+                    
+                }
+                div[class^="img-"]:not(h6):hover{
+                    transform: scale(1.1);
+                    transition: 0.3s all ease;
+                    z-index: 5;
+                }
+                .img-1{
+                    background: url(../images/pixelart/console.png);
+                }
+                
+                .img-2{
+                    background: url(../images/pixelart/pokemontower.png);
+                }
+                .img-3{
+                    background: url(../images/pixelart/Pochita.png);
+                }
+                .img-4{
+                    background: url(../images/pixelart/gateoftruth.png);
+                }
+            }
+        }
+    }
+}

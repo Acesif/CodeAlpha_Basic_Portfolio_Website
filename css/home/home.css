@@ -6,8 +6,11 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Silkscreen", cursive;
   user-select: none;
+}
+
+.text {
+  font-family: "Silkscreen", cursive;
 }
 
 a {
@@ -45,16 +48,22 @@ body {
   background-color: red;
 }
 
-.return {
+#return {
   display: none;
   position: fixed;
   bottom: 20px;
   left: 30px;
   background-color: white;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   z-index: 2;
+  border-radius: 30px;
+}
+#return i {
+  position: relative;
+  top: 28%;
+  left: 38%;
 }
 
 .container li {
@@ -172,8 +181,20 @@ body {
 .container #home .div9 {
   grid-area: 3/5/5/6;
   color: white;
-  padding-left: 1.25rem;
+  margin-left: -3rem;
   border: none;
+}
+.container #home .div9 #email #mail {
+  display: inline;
+}
+.container #home .div9 #email #address {
+  display: none;
+}
+.container #home .div9 #email:hover #mail {
+  display: none;
+}
+.container #home .div9 #email:hover #address {
+  display: inline;
 }
 .container #home .div10 {
   grid-area: 5/3/6/5;
