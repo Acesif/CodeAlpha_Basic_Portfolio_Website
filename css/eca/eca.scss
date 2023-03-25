@@ -11,6 +11,14 @@
         transform: scaleY(-1);
         color: white;
         .image-container{
+            .images:hover{
+                >*{
+                    opacity: 0.3;
+                }
+                >*:hover{
+                    opacity: 1;
+                }
+            }
             .images{
                 display: flex;
                 gap: .625rem;
@@ -27,20 +35,20 @@
                     transition: 0.3s all ease;
                     
                 }
-                div[class^="img-"]:not(h6):hover{
+                div[class^="img-"]:hover{
                     transform: scale(1.1);
                     transition: 0.3s all ease;
                     z-index: 5;
                 }
                 .img-1{
-                    background: url(../images/pixelart/console.png);
+                    background: url(../images/pixelart/Dedenne.png);
                 }
                 
                 .img-2{
                     background: url(../images/pixelart/pokemontower.png);
                 }
                 .img-3{
-                    background: url(../images/pixelart/Pochita.png);
+                    background: url(../images/pixelart/V2.png);
                 }
                 .img-4{
                     background: url(../images/pixelart/gateoftruth.png);

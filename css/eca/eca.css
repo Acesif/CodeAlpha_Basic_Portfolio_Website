@@ -12,6 +12,12 @@
   transform: scaleY(-1);
   color: white;
 }
+#eca .eca-container .image-container .images:hover > * {
+  opacity: 0.3;
+}
+#eca .eca-container .image-container .images:hover > *:hover {
+  opacity: 1;
+}
 #eca .eca-container .image-container .images {
   display: flex;
   gap: 0.625rem;
@@ -28,19 +34,19 @@
   border-radius: 1.25rem;
   transition: 0.3s all ease;
 }
-#eca .eca-container .image-container .images div[class^=img-]:not(h6):hover {
+#eca .eca-container .image-container .images div[class^=img-]:hover {
   transform: scale(1.1);
   transition: 0.3s all ease;
   z-index: 5;
 }
 #eca .eca-container .image-container .images .img-1 {
-  background: url(../images/pixelart/console.png);
+  background: url(../images/pixelart/Dedenne.png);
 }
 #eca .eca-container .image-container .images .img-2 {
   background: url(../images/pixelart/pokemontower.png);
 }
 #eca .eca-container .image-container .images .img-3 {
-  background: url(../images/pixelart/Pochita.png);
+  background: url(../images/pixelart/V2.png);
 }
 #eca .eca-container .image-container .images .img-4 {
   background: url(../images/pixelart/gateoftruth.png);
